@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #202632;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: rgba(78, 93, 115, 0.4);
+  width: 92%;
+  max-width: 40rem;
+  text-align: center;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 2.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.card .advice-id {
+  color: #52ffa8;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.35rem;
+  margin-bottom: 2.8rem;
+  margin-top: 1rem;
+}
+
+.card .advice {
+  color: #cee3e9;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  line-height: 141%;
+}
+
+.card .divider {
+  margin-bottom: 3rem;
+}
+
+.card .desktop {
+  display: none;
+}
+
+.card .icon-dice {
+  padding: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  border: none;
+  cursor: pointer;
+  background-color: #52ffa8;
+}
+
+.card .icon-dice:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 3rem rgba(82, 255, 168, 0.75);
+          box-shadow: 0 0 3rem rgba(82, 255, 168, 0.75);
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .divider {
+    display: none;
+  }
+  .container .card .desktop {
+    display: block;
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

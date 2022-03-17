@@ -1,0 +1,64 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//### Mobile
+.card {
+    background-color: $Grayish-blue;
+    width: 92%;
+    max-width: 40rem;
+     text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.8rem;
+    align-items: center;
+
+    position: relative;
+
+    .advice-id {
+        color: $Neon-green;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        letter-spacing: 0.35rem;
+        margin-bottom: 2.8rem;
+        margin-top: 1rem;
+    }
+
+    .advice {
+        color: $light-cyan;
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        line-height: 141%;
+    }
+
+    .divider {
+        margin-bottom: 3rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .icon-dice {
+        padding: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        border: none;
+        cursor: pointer;
+        background-color: $Neon-green;
+    }
+
+    .icon-dice:hover {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 3rem hsla(150, 100%, 66%, 0.75);
+    }
+}

@@ -1,0 +1,19 @@
+@media screen and (min-width: 1440px) {
+    
+   
+    .container {
+        .card {
+        
+            .divider{
+                display: none;
+            }
+
+            .desktop{
+                display: block;
+                width: 95%;
+                margin-bottom: 3rem;
+                
+            }
+        }
+    }
+}
